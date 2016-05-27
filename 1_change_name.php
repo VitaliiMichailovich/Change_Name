@@ -2,9 +2,9 @@
 class transliteration
 {
     /**
-     * Транслитерация производится в соответствии с международным стандартом Doc 9303, 
-     * рекомендованный ИКАО 
-     * (ICAO — International Civil Aviation Organization)
+     * Transliteration is done in accordance with international standard Doc 9303, 
+     * recommended by the International Civil Aviation Organization
+     * (ICAO вЂ” International Civil Aviation Organization)
      */
     public $ru;
     
@@ -16,39 +16,39 @@ class transliteration
     public function transliterationAct () 
     {
         
-        $transliterationMap = array('а' => 'a',
-                                    'б' => 'b',
-                                    'в' => 'v',
-                                    'г' => 'g',
-                                    'д' => 'd',
-                                    'е' => 'e',
-                                    'ё' => 'e',
-                                    'ж' => 'zh',
-                                    'з' => 'z',
-                                    'и' => 'i',
-                                    'й' => 'i',
-                                    'к' => 'k',
-                                    'л' => 'l',
-                                    'м' => 'm',
-                                    'н' => 'n',
-                                    'о' => 'o',
-                                    'п' => 'p',
-                                    'р' => 'r',
-                                    'с' => 's',
-                                    'т' => 't',
-                                    'у' => 'u',
-                                    'ф' => 'f',
-                                    'х' => 'kh',
-                                    'ц' => 'ts',
-                                    'ч' => 'ch',
-                                    'ш' => 'sh',
-                                    'щ' => 'shch',
-                                    'ъ' => 'ie',
-                                    'ы' => 'y',
-                                    'ь' => '',
-                                    'э' => 'e',
-                                    'ю' => 'iu',
-                                    'я' => 'ia',
+        $transliterationMap = array('Р°' => 'a',
+                                    'Р±' => 'b',
+                                    'РІ' => 'v',
+                                    'Рі' => 'g',
+                                    'Рґ' => 'd',
+                                    'Рµ' => 'e',
+                                    'С‘' => 'e',
+                                    'Р¶' => 'zh',
+                                    'Р·' => 'z',
+                                    'Рё' => 'i',
+                                    'Р№' => 'i',
+                                    'Рє' => 'k',
+                                    'Р»' => 'l',
+                                    'Рј' => 'm',
+                                    'РЅ' => 'n',
+                                    'Рѕ' => 'o',
+                                    'Рї' => 'p',
+                                    'СЂ' => 'r',
+                                    'СЃ' => 's',
+                                    'С‚' => 't',
+                                    'Сѓ' => 'u',
+                                    'С„' => 'f',
+                                    'С…' => 'kh',
+                                    'С†' => 'ts',
+                                    'С‡' => 'ch',
+                                    'С€' => 'sh',
+                                    'С‰' => 'shch',
+                                    'СЉ' => 'ie',
+                                    'С‹' => 'y',
+                                    'СЊ' => '',
+                                    'СЌ' => 'e',
+                                    'СЋ' => 'iu',
+                                    'СЏ' => 'ia',
                                     ' ' => '-',
                                     'a' => 'a',
                                     'b' => 'b',
@@ -76,10 +76,10 @@ class transliteration
                                     'x' => 'x',
                                     'y' => 'y',
                                     'z' => 'z',
-                                    'ґ' => 'g',
-                                    'є' => 'ie',
-                                    'і' => 'i',
-                                    'ї' => 'yi',
+                                    'Т‘' => 'g',
+                                    'С”' => 'ie',
+                                    'С–' => 'i',
+                                    'С—' => 'yi',
                                     '\'' => '');
 
         $ru_array = mb_strtolower($this->ru);
@@ -92,6 +92,6 @@ class transliteration
     }
 }
 
-$transliteration_obj = new transliteration('Український Русский English');
+$transliteration_obj = new transliteration('РЈРєСЂР°С—РЅСЃСЊРєРёР№ Р СѓСЃСЃРєРёР№ English');
 echo ($transliteration_obj->transliterationAct());
 ?>
